@@ -27,6 +27,12 @@ section {
   background-color: transparent;
   color: #fff;
 }
+.imog{
+  width:200px;
+}
+.imog:hover{
+  background-color: gray;
+}
 .navigation {
   box-sizing: border-box;
   position: fixed;

@@ -2,35 +2,36 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/e0d7e898b5.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
+    <script src="https://kit.fontawesome.com/e0d7e898b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 
 <body>
     <section>
         <nav class='navigation'>
+
             <div class='navigation__title'>
                 <ul>
                     <li>logo</li>
                     <li>acceuil<a href="watch.html"></a></li>
                     <li>contact</li>
                     <li><a href="panier.html">panier</a><span id="val"></span> </li>
-                   
+
                 </ul>
             </div>
         </nav>
@@ -42,32 +43,22 @@
                         <li>logo</li>
                         <li>acceuil</li>
                         <li>contact</li>
-                        <li><a href="panier.html">panier</a><span id="val"></span> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Launch demo modal
-                          </button></li>
-                      
-                        
+                        <li><a href="panier.html">panier</a>
+                            <span id="val"></span> 
+                            <button type="button"
+                                class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="total()">
+                                Launch demo modal
+                            </button>
+                            <!-- Modal -->
+
+                        </li>
+
+                        <!-- Button trigger modal -->
+
                     </ul>
-                    <div class="modal" tabindex="-1">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title">Modal title</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-  <div class="cart-items">
-      
-  </div>
-                          </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+
                 </div>
+
             </nav>
 
             <div class="bg1"><img src="img/bg1.jpg" alt="" srcset=""></div>
@@ -75,7 +66,11 @@
     </section>
     <div class="pro">
         <h1 class="welc">A PROPOS</h1>
-        <p>Le marché de la montre de luxe est de plus en plus compétitif alors que de nouveaux acteurs tirent parti de nouveaux designs et technologies pour rivaliser avec des marques établies de longue date. Le défi le plus important est de différencier une montre d'un ensemble d'excellents produits. Les marques se sont donc tournées vers différentes stratégies visant toutes à communiquer des aspects uniques de leurs produits ou de leur marque.</p>
+        <p>Le marché de la montre de luxe est de plus en plus compétitif alors que de nouveaux acteurs tirent parti de
+            nouveaux designs et technologies pour rivaliser avec des marques établies de longue date. Le défi le plus
+            important est de différencier une montre d'un ensemble d'excellents produits. Les marques se sont donc
+            tournées vers différentes stratégies visant toutes à communiquer des aspects uniques de leurs produits ou de
+            leur marque.</p>
     </div>
     <div class="selc">
         <div class="selc1">
@@ -87,7 +82,7 @@
                 <option value="mercedes">Mercedes</option>
                 <option value="audi">Audi</option>
             </select>
-            <div class="inp"id="myBtnContainer">
+            <div class="inp" id="myBtnContainer">
                 <div>
                     <input type="checkbox" name="ROLEX" id="">
                     <label for="scales">all</label>
@@ -98,7 +93,7 @@
                 </div>
 
                 <div>
-                    <input type="checkbox"name="ROLEX" id="">
+                    <input type="checkbox" name="ROLEX" id="">
                     <label for="horns">Tudor</label>
                 </div>
                 <div>
@@ -118,12 +113,30 @@
 
             </div>
         </div>
-       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carte</h5>
+
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <div class="cart-items"> </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="selc2"><select name="watches" id="watches">
-                <option value="volvo"   class="filter"  data-filter="swatch">swatch</option>
-                <option value="saab"   class="filter"  data-filter="tudor">tudor</option>
-                <option value="mercedes"   class="filter"  data-filter="piaget">piaget</option>
-                <option value="audi"   class="filter"  data-filter="patik phillip">patik phillip</option>
+                <option value="volvo" class="filter" data-filter="swatch">swatch</option>
+                <option value="saab" class="filter" data-filter="tudor">tudor</option>
+                <option value="mercedes" class="filter" data-filter="piaget">piaget</option>
+                <option value="audi" class="filter" data-filter="patik phillip">patik phillip</option>
             </select>
             <select name="cars" id="cars">
                 <option value="volvo">Volvo</option>
@@ -139,31 +152,34 @@
             </select></div>
 
     </div>
-  
+
     <div class="card-group group1">
         <div class="container">
             <div class="row">
 
                 <div class="card swatch col-md-3 ">
-                <img src="img/watch10.png" class="card-img-top" alt="...">
+
                     <div class="card-body ">
+                        <img src="img/watch10.png" class="card-img-top" alt="...">
                         <h5 class="card-title">MONTRE POUR HOMME SWATCH SIR BLUE GN718</h5>
-                    <button type="button" class="btn btn-primary b1"onclick=>Ajouter au panier </button>
+                        <h5 class="pris">2500£</h5>
+                        <button type="button" class="btn btn-primary b1" onclick=>Ajouter au panier </button>
                     </div>
                 </div>
                 <div class="card patik col-md-3 ">
-                    <img src="img/watch11.png" class="card-img-top" alt="...">
-                    <div class="card-body " >
+                    <div class="card-body ">
+                        <img src="img/watch11.png" class="card-img-top" alt="...">
                         <h5 class="card-title">Montre swatch pour homme YWS406G</h5>
-
-                        <button type="button" class="btn btn-primary b2"onclick=>Ajouter au panier </button>
+                        <h5 class="pris">2500£</h5>
+                        <button type="button" class="btn btn-primary b2" onclick=>Ajouter au panier </button>
                     </div>
+                    <button></button>
                 </div>
                 <div class="card tudor col-md-3 ">
-                    <img src="img/watch12.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
+                        <img src="img/watch12.jpg" class="card-img-top" alt="...">
                         <h5 class="card-title">Swatch Montre Unisexe - DREAMNIGHT GOLDEN - YCS590G</h5>
-
+                        <h5 class="pris">2500£</h5>
                         <button type="button" class="btn btn-primary b3">Ajouter au panier </button>
                     </div>
                 </div>
@@ -174,66 +190,71 @@
             <div class="row">
 
                 <div class="card col-md-3 piaget">
-                    <img src="img/watch5.webp" class="card-img-top" alt="...">
+
                     <div class="card-body">
+                        <img src="img/watch5.webp" class="card-img-top" alt="...">
                         <h5 class="card-title">Montre SWATCH Pour Homme - SUSG405 - Vert - Garantie 1 An
                         </h5>
-                       
+
                         <h5 class="pris">£3600</h5>
                         <button type="button" class="btn btn-primary b4">Ajouter au panier</button>
                     </div>
                 </div>
                 <div class="card col-md-3 swatch">
-                    <img src="img/watch6.jpeg" class="card-img-top" alt="...">
+
                     <div class="card-body">
+                        <img src="img/watch6.jpeg" class="card-img-top" alt="...">
                         <h5 class="card-title">ROLEX SUBMARINER 40MM - 2 TONS BLACK</h5>
                         <h5 class="pris">1800£</h5>
-                    <button type="button" class="btn btn-primary b5">Ajouter au panier</button>
+                        <button type="button" class="btn btn-primary b5">Ajouter au panier</button>
                     </div>
                 </div>
                 <div class="card col-md-3 tudor">
-                    <img src="img/watch7.jpeg" class="card-img-top" alt="...">
+
                     <div class="card-body">
+                        <img src="img/watch7.jpeg" class="card-img-top" alt="...">
                         <h5 class="card-title">TUDOR
                             BLACK BAY GMT</h5>
-                            <h5 class="pris">350£</h5>
-                    <button type="button" class="btn btn-primary b6"onclick=>Ajouter au panier</button>
+                        <h5 class="pris">350£</h5>
+                        <button type="button" class="btn btn-primary b6" onclick=>Ajouter au panier</button>
                     </div>
                 </div>
 
             </div>
         </div>
-            <div class="container group2">
-                <div class="row">
-            
-                    <div class="card col-md-3 ">
+        <div class="container group2">
+            <div class="row">
+
+                <div class="card col-md-3 ">
+
+                    <div class="card-body">
                         <img src="img/watch12.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">ROLEX SUBMARINER 40MM - 2 TONS BLACK</h5>
-                            <h5 class="pris">1500£</h5>
-                            <button type="button" class="btn btn-primary b7">Ajouter au panier</button>
-                        </div>
+                        <h5 class="card-title">ROLEX SUBMARINER 40MM - 2 TONS BLACK</h5>
+                        <h5 class="pris">1500£</h5>
+                        <button type="button" class="btn btn-primary b7">Ajouter au panier</button>
                     </div>
-                    <div class="card col-md-3 ">
+                </div>
+                <div class="card col-md-3 ">
+
+                    <div class="card-body">
                         <img src="img/watch13.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
                         <h5 class="card-title">TUDOR
                             BLACK BAY GMT</h5>
-                            <h5 class="pris">640£</h5>
-                            <button type="button" class="btn btn-primary b8">Ajouter au panier</button>
-                        </div>
+                        <h5 class="pris">640£</h5>
+                        <button type="button" class="btn btn-primary b8">Ajouter au panier</button>
                     </div>
-                    <div class="card col-md-3 ">
-                        <img src="img/watch14.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">ROLEX SUBMARINER 40MM - 2 TONS BLACK</h5>
-                            <h5 class="pris">800£</h5>
-                        <button type="button" class="btn btn-primary b9">Ajouter au panier</button>
-                        </div>
-                    </div>
-            
                 </div>
+                <div class="card col-md-3 ">
+                    <div class="card-body">
+                        <img src="img/watch14.jpg" class="card-img-top" alt="...">
+                        <h5 class="card-title">ROLEX SUBMARINER 40MM - 2 TONS BLACK</h5>
+                        <h5 class="pris">800£</h5>
+                        <button type="button" class="btn btn-primary b9">Ajouter au panier</button>
+                    </div>
+                </div>
+
             </div>
+        </div>
     </div>
     <nav aria-label="...">
         <ul class="pagination pt-3">
@@ -250,18 +271,53 @@
             </li>
         </ul>
     </nav>
-    <input type="button"class="mt-5 ml-5 er" value="">
+    <input type="button" class="mt-5 ml-5 er" value="">
     <footer>
-        <div class="container"><div class="row">
-        <div class="col-md-3 lor"><p>Le marché de la montre de luxe est de plus en plus compétitif alors que de nouveaux acteurs tirent parti de nouveaux designs et technologies pour rivaliser avec des marques établies de longue date. Le défi le plus important est de différencier une montre d'un ensemble d'excellents produits. </p></div>
-        <div class="col-md-2 res"><ul><li>facbook</li>
-        <li>twiter</li>
-        <li>instagram</li>
-        <li>youtube</li></ul></div>
-        <div class="col-md-3 map"><div class="mapouter"><div class="gmap_canvas"><iframe width="297" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=tunis&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:225px;width:297px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:225px;width:297px;}</style></div></div></div>
-        <div class="col-md-3 inpp"><textarea name="" id="" ></textarea><br><button class="justify-content-center">submit</button></div>
-    </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 lor">
+                    <p>Le marché de la montre de luxe est de plus en plus compétitif alors que de nouveaux acteurs
+                        tirent parti de nouveaux designs et technologies pour rivaliser avec des marques établies de
+                        longue date. Le défi le plus important est de différencier une montre d'un ensemble d'excellents
+                        produits. </p>
+                </div>
+                <div class="col-md-2 res">
+                    <ul>
+                        <li>facbook</li>
+                        <li>twiter</li>
+                        <li>instagram</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 map">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="297" height="200" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=tunis&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://123movies-to.org"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 225px;
+                                    width: 297px;
+                                }
+                            </style><a href="https://www.embedgooglemap.net"></a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 225px;
+                                    width: 297px;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 inpp"><textarea name="" id=""></textarea><br><button
+                        class="justify-content-center">submit</button></div>
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
