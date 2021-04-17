@@ -43,3 +43,45 @@ function kl(){
     }
 }
 ///////////////===========================////////////////////////////////
+
+// our array
+
+
+let btns=document.getElementsByClassName('.btn')
+for(let i=0;i<btns.length;i++){
+    addbtn=btns[i];
+    addbtn.addEventListener('click',addtocart);
+}
+function addtocart(event){
+    btnclick=event.target;
+    CardItems=btnclick.parentElement.parentElement.parentElement;
+    titre=CardItems.getElementsByClassName('card-title')[0].innerText;
+    price=CardItems.getElementsByClassName('pris')[0].innerText;
+    imagesrc=CardItems.getElementsByClassName('card-img-top')[0].src;
+    additemcard(titre,price,imagesrc)
+    
+}
+
+
+function additemcard(titre,price,imagesrc){
+let newDiv=document.createElement('div');
+var cartcontent=`   
+
+<img src="${imagesrc}">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">${titre}</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p>${price}</p>
+    </div>
+   
+  </div>
+
+   `
+newDiv.innerHTML=cartcontent;
+let cart2=document.getElementsByClassName('cart-items')[0]
+ cart2.appendChild("cartcontent")
+}
+

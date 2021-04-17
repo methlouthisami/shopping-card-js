@@ -4,13 +4,13 @@
   margin: 0;
   font-family: sans-serif;
 }
-*{
-    list-style-type: none;
+* {
+  list-style-type: none;
 }
-body{
-    overflow-x: hidden;
-    overflow-y: scroll;
-    margin: 0;
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
 }
 section {
   width: 100%;
@@ -22,7 +22,7 @@ section {
   position: absolute;
   top: 0;
   width: 100%;
-  height:300px;
+  height: 300px;
   text-align: center;
   background-color: transparent;
   color: #fff;
@@ -32,7 +32,7 @@ section {
   position: fixed;
   width: 100%;
   height: 60px;
-  background-color:transparent;
+  background-color: transparent;
   color: #fff;
   padding: 20px 50px;
   transition: all 0.5s ease;
@@ -49,188 +49,223 @@ section {
   widows: 100%;
   transform: translateY(0%);
 }
-.navigation__title img{
-    width:25px;
+.navigation__title img {
+  width: 25px;
 }
-.navigation ul{
-    display:flex;
-    justify-content: space-around;
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
 }
-#val{
-   
-   border-radius: 30%;
-    background-color:rosybrown;
-    margin-left: 20px;
+#val {
+  border-radius: 30%;
+  background-color: rosybrown;
+  margin-left: 20px;
 }
-.bg1 img{
-    width:120%;
-    height:600px;
-    margin-top: -50px;
+.bg1 img {
+  width: 120%;
+  height: 600px;
+  margin-top: -50px;
 }
- .welc{
-     margin-top: 20px;
-    display: flex;
-justify-content: center;
+.welc {
+  color: #003a63;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-
-.pro p{
-    text-align: justify;
-    margin-left: 100px;
-    margin-right: 100px;
+.pro p {
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-.selc{
-    display: flex;
-    justify-content: space-around;
+.selc {
+  display: flex;
+  justify-content: space-around;
 }
-.selc1{
-    
-   
+.selc1 {
   margin-left: -250px;
-   
-    
+}
+.selc1 h3 {
+  color: #003a63;
+}
+.inp input div {
+  display: flex;
+}
+.group1 .card img {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
-.inp input div{
-    display:flex;
+.group1 {
+  margin-top: -140px;
+  margin-right: -180px;
 }
-.group1 .card img{
-    width:200px;
-    height:200px;
-   margin-left: auto;
-   margin-right: auto;
-    margin-top: 10px;
+.group1 .card {
+  width: 300px;
+  margin-left: 50px;
 }
 
-
-
-.group1{
- 
-    margin-top: -140px;
-    margin-right:-180px;
+.az {
+  margin-top: 50px;
 }
-.group1 .card{
-width:300px;
-margin-left:50px;
-
+.group2 {
+  padding-top: 20px;
+}
+.pagination {
+  margin-left: 650px;
 }
 
-.az{
-    margin-top:50px;
+.inpp textarea {
+  width: 300px;
+  height: 150px;
 }
-.group2{
-    padding-top: 20px;
+.lor,
+.res {
+  color: #fff;
 }
-.pagination{
-    margin-left:650px;
-}
-.group1 .btn{
-    margin-left:80px;
-    margin-top: 20px;
-
-
+.res li :hover {
+  color: red;
 }
 /*********************page   2************************/
-.pan   {
-    margin-top:-400px;
-    margin-bottom: 450px ;
+.pan {
+  margin-top: -400px;
+  margin-bottom: 450px;
 }
-.table>tbody>tr>td, .table>tfoot>tr>td{
-    vertical-align: middle;
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle;
 }
-.navigation li{
-    font-size:15px;
+.navigation li {
+  font-size: 15px;
 }
-.navigation li a{
-    color:#fff;
-    
+.navigation li a {
+  color: #fff;
 }
+.lor p {
+  text-align: justify;
+}
+ 
 
 @media screen and (max-width: 600px) {
-    table#cart tbody td .form-control{
-		width:20%;
-		display: inline !important;
-	}
-	.actions .btn{
-		width:36%;
-		margin:1.5em 0;
-	}
-	
-	.actions .btn-info{
-		float:left;
-	}
-	.actions .btn-danger{
-		float:right;
-	}
-	
-	table#cart thead { display: none; }
-	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
-	table#cart tbody tr td:first-child { background: #333; color: #fff; }
-	table#cart tbody td:before {
-		content: attr(data-th); font-weight: bold;
-		display: inline-block; width: 8rem;
-	}
-	
-	
-	
-	table#cart tfoot td{display:block; }
-	table#cart tfoot td .btn{display:block;}
-	
+  table#cart tbody td .form-control {
+    width: 20%;
+    display: inline !important;
+  }
+  .actions .btn {
+    width: 36%;
+    margin: 1.5em 0;
+  }
+
+  .actions .btn-info {
+    float: left;
+  }
+  .actions .btn-danger {
+    float: right;
+  }
+
+  table#cart thead {
+    display: none;
+  }
+  table#cart tbody td {
+    display: block;
+    padding: 0.6rem;
+    min-width: 320px;
+  }
+  table#cart tbody tr td:first-child {
+    background: #333;
+    color: #fff;
+  }
+  table#cart tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+  }
+
+  table#cart tfoot td {
+    display: block;
+  }
+  table#cart tfoot td .btn {
+    display: block;
+  }
 }
-@media only screen and (max-width: 360px){
-  .bg1 img{
-      width:360px;
-      height:250px;
+@media only screen and (max-width: 400px) {
+  .bg1 img {
+    width: 400px;
+    height: 250px;
   }
-  section{
-      height:300px;
+  section {
+    height: 300px;
   }
-  .pro p{
-      margin-left: 5px;
-      margin-right: 5px;
-      
+  .pro p {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .card-group button {
+    margin-left: 100px;
   }
   .card-group {
-      justify-content: center;
-      width:90%;
+    justify-content: center;
+    width: 90%;
+
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .res li {
+    margin-left: 100px;
+    font-size: 20px;
+  }
+
+  .card {
+    margin-top: 20px;
     
-      margin-left:0px;
-      margin-bottom: 10px;
-      
   }
-  .card-group img{
-      width:180px;
-    
+ 
+  .b2 {
+    margin-top: 150px;
   }
-  .group1 img{
-      margin-left:5px;
+  .card-group img {
+    width: 180px;
   }
-  .card{
-      padding-bottom: 10px;
+  .group1 img {
+    margin-left: 5px;
   }
-  .navigation{
-    width:360px;
-}
-.pagination{
+  .card {
+    padding-bottom: 10px;
+  }
+  .navigation {
+    width: 400px;
+  }
+  .pagination {
     margin-left: 30px;
+  }
 }
+footer {
+  background-color: #003a63;
+  margin-top: 20px;
+
+  display: flex;
 }
-footer{
-    background-color:#003a63;
-    margin-top: 20px;
-    margin-bottom:30px;
-    display: flex;
+footer .map {
+  width: 300px;
+  padding-left: 50px;
+  margin-top: 10px;
 }
-footer .map{
-padding-left: -150px;
+footer .inpp {
+  margin-top: 10px;
+  margin-left: 40px;
 }
-footer .inpp{
-    margin-left:80px;
+.inpp button {
+  margin-right: 50px;
 }
-footer .res li{
-margin-top: 20px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+footer .res li {
+  margin-top: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-footer .lor{
-    margin-top: 20px;
+footer .lor {
+  margin-top: 20px;
 }
