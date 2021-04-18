@@ -27,10 +27,10 @@
 
             <div class='navigation__title'>
                 <ul>
-                    <li>logo</li>
-                    <li>acceuil<a href="watch.html"></a></li>
-                    <li>contact</li>
-                    <li><a href="panier.html">panier</a><span id="val"></span> </li>
+                    <li><h3>logo</h3></li>
+                    <li><h3>acceuil</h3><a href="watch.html"></a></li>
+                    <li><h3>contact</h3></li>
+                    <li><a href="panier.html"><h3>panier</h3></a><span id="val"></span> </li>
 
                 </ul>
             </div>
@@ -40,13 +40,13 @@
             <nav class='navigation navigation--relative'>
                 <div class='navigation__title'>
                     <ul>
-                        <li>logo</li>
-                        <li>acceuil</li>
-                        <li>contact</li>
+                        <li><h3>logo</h3></li>
+                        <li><h3>acceuil</h3></li>
+                        <li><h3>contact</h3></li>
                         <li><a href="panier.html">panier</a>
-                            <span id="val"></span> 
-                            <button type="button"
-                                class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="total()">
+                            <span id="val"></span>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" onclick="total()">
                                 Launch demo modal
                             </button>
                             <!-- Modal -->
@@ -113,7 +113,7 @@
 
             </div>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -124,8 +124,9 @@
                     <div class="modal-body" id="modalBody">
                         <div class="cart-items"> </div>
                     </div>
+
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary remove" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
@@ -173,7 +174,7 @@
                         <h5 class="pris">2500£</h5>
                         <button type="button" class="btn btn-primary b2" onclick=>Ajouter au panier </button>
                     </div>
-                    <button></button>
+
                 </div>
                 <div class="card tudor col-md-3 ">
                     <div class="card-body">

@@ -1,4 +1,4 @@
-localStorage.setItem("totalPrice", 0)
+localStorage.setItem("totalPrice", 1)
 //////////======stickey navbar ==============/////////////////
 function stickyElement(e) {
 
@@ -43,6 +43,12 @@ function kl() {
 
 }
 
+
+////////////////////////////localstorge empty===//////////////////////////////////
+window.localStorage.removeItem('kl');
+
+//////////////////////////////btns///////////////////////////////
+
 let btns = document.getElementsByClassName('btn')
 for (let i = 0; i < btns.length; i++) {
   addbtn = btns[i];
@@ -64,11 +70,11 @@ function additemcard(titre, price, imagesrc) {
   var cartrow = document.createElement('div')
   totalPrice += parseInt(price);
   localStorage.setItem("totalPrice", totalPrice)
-  var cartrowcontents = `<div class="container">
+  var cartrowcontents = `<div class="modalcart">
   <img class="img" src="${imagesrc}" style="height:100px">
   <span>${titre}</span>
-  <span>${price}</span>
-  </div>`
+  <h3>${price}</h3><button class="removi" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">remove</button>
+  <span class="ze"></span></div>`
   cartrow.innerHTML = cartrowcontents
   cartitems.appendChild(cartrow)
 }
@@ -78,10 +84,9 @@ function total() {
   var totalRow = document.createElement('div')
   let modalBody = document.getElementById("modalBody");
   totalRow.innerHTML = `
-  <div class="">The total price equals to: ${totalPrice}</div>`
+  <div><h2>TOTAL:${totalPrice}</h2></div>`
   modalBody.appendChild(totalRow)
 }
 
-window.onbeforeunload = () => {
-  localStorage.removeItem('kl');
-}
+
+
