@@ -27,10 +27,19 @@
 
             <div class='navigation__title'>
                 <ul>
-                    <li><h3>logo</h3></li>
-                    <li><h3>acceuil</h3><a href="watch.html"></a></li>
-                    <li><h3>contact</h3></li>
-                    <li><a href="panier.html"><h3>panier</h3></a><span id="val"></span> </li>
+                    <li>
+                        <h3>logo</h3>
+                    </li>
+                    <li>
+                        <h3>acceuil</h3><a href="watch.html"></a>
+                    </li>
+                    <li>
+                        <h3>contact</h3>
+                    </li>
+                    <li id="panier"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" onclick="total()">
+                            panier<img src="img/shopping-en-ligne.png" class='pani-img'><span id="val"></span>
+                        </button> </li>
 
                 </ul>
             </div>
@@ -40,16 +49,24 @@
             <nav class='navigation navigation--relative'>
                 <div class='navigation__title'>
                     <ul>
-                        <li><h3>logo</h3></li>
-                        <li><h3>acceuil</h3></li>
-                        <li><h3>contact</h3></li>
-                        <li><a href="panier.html">panier</a>
-                            <span id="val"></span>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal" onclick="total()">
-                                Launch demo modal
-                            </button>
-                            <!-- Modal -->
+                        <li>
+                            <h3>logo</h3>
+                        </li>
+                        <li>
+                            <h3>acceuil</h3>
+                        </li>
+                        <li>
+                            <h3>contact</h3>
+                        </li>
+
+                        <span id="val"></span>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" onclick="total()"><img src="img/shopping-en-ligne.png"
+                                class='pani-img'>
+
+                            panier
+                        </button>
+                        <!-- Modal -->
 
                         </li>
 
@@ -139,18 +156,8 @@
                 <option value="mercedes" class="filter" data-filter="piaget">piaget</option>
                 <option value="audi" class="filter" data-filter="patik phillip">patik phillip</option>
             </select>
-            <select name="cars" id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
-            <select name="cars" id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select></div>
+            
+           </div>
 
     </div>
 
@@ -164,7 +171,9 @@
                         <img src="img/watch10.png" class="card-img-top" alt="...">
                         <h5 class="card-title">MONTRE POUR HOMME SWATCH SIR BLUE GN718</h5>
                         <h5 class="pris">2500£</h5>
-                        <button type="button" class="btn btn-primary b1" onclick=>Ajouter au panier </button>
+                        <button type="button" class="btn btn-primary b1" onclick="valid()">Ajouter a panier
+                        </button><button id="button-ok"><img src="img/check.png"
+                                style="width:30px;height:40px">valid</button>
                     </div>
                 </div>
                 <div class="card patik col-md-3 ">
@@ -172,7 +181,7 @@
                         <img src="img/watch11.png" class="card-img-top" alt="...">
                         <h5 class="card-title">Montre swatch pour homme YWS406G</h5>
                         <h5 class="pris">2500£</h5>
-                        <button type="button" class="btn btn-primary b2" onclick=>Ajouter au panier </button>
+                        <button type="button" class="btn btn-primary b2" >Ajouter au panier </button>
                     </div>
 
                 </div>
@@ -181,9 +190,11 @@
                         <img src="img/watch12.jpg" class="card-img-top" alt="...">
                         <h5 class="card-title">Swatch Montre Unisexe - DREAMNIGHT GOLDEN - YCS590G</h5>
                         <h5 class="pris">2500£</h5>
-                        <button type="button" class="btn btn-primary b3">Ajouter au panier </button>
+                        <button type="button" class="btn btn-primary b3" >Ajouter au panier </button>
+                                
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -199,6 +210,7 @@
 
                         <h5 class="pris">£3600</h5>
                         <button type="button" class="btn btn-primary b4">Ajouter au panier</button>
+                        <butto class="button-ok">
                     </div>
                 </div>
                 <div class="card col-md-3 swatch">
@@ -208,6 +220,7 @@
                         <h5 class="card-title">ROLEX SUBMARINER 40MM - 2 TONS BLACK</h5>
                         <h5 class="pris">1800£</h5>
                         <button type="button" class="btn btn-primary b5">Ajouter au panier</button>
+                        <butto class="button-ok">
                     </div>
                 </div>
                 <div class="card col-md-3 tudor">
@@ -218,6 +231,7 @@
                             BLACK BAY GMT</h5>
                         <h5 class="pris">350£</h5>
                         <button type="button" class="btn btn-primary b6" onclick=>Ajouter au panier</button>
+                        <butto class="button-ok">
                     </div>
                 </div>
 
@@ -233,6 +247,7 @@
                         <h5 class="card-title">ROLEX SUBMARINER 40MM - 2 TONS BLACK</h5>
                         <h5 class="pris">1500£</h5>
                         <button type="button" class="btn btn-primary b7">Ajouter au panier</button>
+                        <butto class="button-ok">
                     </div>
                 </div>
                 <div class="card col-md-3 ">
@@ -243,6 +258,7 @@
                             BLACK BAY GMT</h5>
                         <h5 class="pris">640£</h5>
                         <button type="button" class="btn btn-primary b8">Ajouter au panier</button>
+                        <butto class="button-ok">
                     </div>
                 </div>
                 <div class="card col-md-3 ">
@@ -250,7 +266,11 @@
                         <img src="img/watch14.jpg" class="card-img-top" alt="...">
                         <h5 class="card-title">ROLEX SUBMARINER 40MM - 2 TONS BLACK</h5>
                         <h5 class="pris">800£</h5>
-                        <button type="button" class="btn btn-primary b9">Ajouter au panier</button>
+                        <button type="button" class="btn btn-primary b9">Ajouter au panier</button><button
+                            class="button-ok">valid<div>Icons made by <a
+                                    href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+                                    perfect</a> from
+                                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></button>
                     </div>
                 </div>
 

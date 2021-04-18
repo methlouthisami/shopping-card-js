@@ -1,4 +1,4 @@
-localStorage.setItem("totalPrice", 1)
+localStorage.setItem("totalPrice",0)
 //////////======stickey navbar ==============/////////////////
 function stickyElement(e) {
 
@@ -42,7 +42,7 @@ function kl() {
   }
 
 }
-
+   
 
 ////////////////////////////localstorge empty===//////////////////////////////////
 window.localStorage.removeItem('kl');
@@ -57,9 +57,10 @@ for (let i = 0; i < btns.length; i++) {
 
 function addtocart(event) {
   btnclick = event.target;
-  CardItems = btnclick.parentNode;
+  CardItems = btnclick.parentNode;   
   titre = CardItems.getElementsByClassName('card-title')[0].innerText;
   price = CardItems.getElementsByClassName('pris')[0].innerText;
+  console.log("pris")
   imagesrc = CardItems.getElementsByClassName('card-img-top')[0].src;
   additemcard(titre, price, imagesrc)
 }
@@ -87,6 +88,14 @@ function total() {
   <div><h2>TOTAL:${totalPrice}</h2></div>`
   modalBody.appendChild(totalRow)
 }
-
-
+//////////display-button-valid/////////////
+function valid() {
+  var x = document.getElementById("button-ok");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+console.log(valid())
 
